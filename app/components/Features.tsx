@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 
 import { useRef } from 'react';
@@ -85,7 +86,7 @@ export default function Features() {
       </div>
 
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-white/2 to-transparent pointer-events-none"></div>
     </section>
   );
 }

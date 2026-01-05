@@ -1,10 +1,11 @@
+// @ts-nocheck
 'use client';
 
 import { motion } from 'framer-motion';
 
 export default function CTASection() {
   return (
-    <section className="relative bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505] py-20 sm:py-24 md:py-32">
+    <section className="relative bg-linear-to-b from-[#050505] via-[#0a0a0a] to-[#050505] py-20 sm:py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

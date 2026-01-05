@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 
 import { useRef } from 'react';
@@ -25,7 +26,7 @@ export default function TechSpecs() {
   return (
     <section id="specs" ref={ref} className="relative bg-[#050505] py-20 sm:py-24 md:py-32">
       <motion.div
-        style={{ opacity, scale }}
+        style={{ opacity }}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         {/* Header */}

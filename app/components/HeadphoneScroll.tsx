@@ -58,7 +58,7 @@ export default function HeadphoneScroll() {
   }, []);
 
   // Update frame based on scroll progress
-  useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+  useMotionValueEvent(scrollYProgress, 'change', (latest: number) => {
     if (!imagesLoaded) return;
     const frameIndex = Math.min(
       Math.floor(latest * FRAME_COUNT),
@@ -147,8 +147,6 @@ export default function HeadphoneScroll() {
         <motion.div 
           style={{ 
             opacity: containerOpacity,
-            scale: containerScale,
-            y: containerY,
           }}
           className="fixed inset-0 w-full h-screen z-10 origin-center"
         >
