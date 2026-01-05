@@ -38,18 +38,18 @@ export default function VideoSection() {
   };
 
   return (
-    <section ref={ref} className="relative bg-[#050505] py-32 overflow-hidden">
+    <section ref={ref} className="relative bg-[#050505] py-20 sm:py-24 md:py-32 overflow-hidden">
       <motion.div
         style={{ scale, opacity }}
-        className="max-w-7xl mx-auto px-6 lg:px-8"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl lg:text-7xl font-bold tracking-tighter text-white/90 mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white/90 mb-4 sm:mb-6 px-4"
           >
             Sound That Moves You
           </motion.h2>
@@ -58,7 +58,7 @@ export default function VideoSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-white/60 max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto px-4"
           >
             Experience the difference that precision engineering makes
           </motion.p>
@@ -70,7 +70,7 @@ export default function VideoSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative aspect-video rounded-3xl overflow-hidden bg-black border border-white/20 group"
+          className="relative aspect-video rounded-2xl sm:rounded-3xl overflow-hidden bg-black border border-white/20 group"
         >
           {/* Video Element */}
           <video
@@ -99,17 +99,17 @@ export default function VideoSection() {
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-20 h-20 mx-auto mb-4 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-all"
+                  className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-all touch-manipulation"
                 >
                   <svg
-                    className="w-8 h-8 text-white ml-1"
+                    className="w-6 h-6 sm:w-8 sm:h-8 text-white ml-1"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </motion.div>
-                <p className="text-white/80 text-sm font-medium">Watch the Story</p>
+                <p className="text-white/80 text-xs sm:text-sm font-medium">Watch the Story</p>
               </div>
             </motion.div>
           )}
@@ -124,7 +124,7 @@ export default function VideoSection() {
         </motion.div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 mt-20">
+        <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20">
           {[
             { value: '99%', label: 'Noise Reduction' },
             { value: '40hrs', label: 'Battery Life' },
@@ -138,10 +138,10 @@ export default function VideoSection() {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <p className="text-4xl lg:text-6xl font-bold text-white mb-2">
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-1 sm:mb-2">
                 {stat.value}
               </p>
-              <p className="text-sm text-white/60">{stat.label}</p>
+              <p className="text-xs sm:text-sm text-white/60">{stat.label}</p>
             </motion.div>
           ))}
         </div>

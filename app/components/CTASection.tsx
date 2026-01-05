@@ -4,35 +4,35 @@ import { motion } from 'framer-motion';
 
 export default function CTASection() {
   return (
-    <section className="relative bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505] py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <section className="relative bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505] py-20 sm:py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-6xl lg:text-8xl font-bold tracking-tighter text-white/90 mb-8">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tighter text-white/90 mb-6 sm:mb-8 px-4">
             Ready to Experience
             <br />
             <span className="text-white">Pure Sound?</span>
           </h2>
-          <p className="text-xl lg:text-2xl text-white/60 mb-12 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/60 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
             Join thousands of audiophiles who have discovered their perfect sound
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-5 bg-white text-black text-base font-semibold rounded-full hover:bg-white/90 transition-all shadow-2xl shadow-white/10"
+              className="px-8 sm:px-10 py-4 sm:py-5 bg-white text-black text-sm sm:text-base font-semibold rounded-full hover:bg-white/90 transition-all shadow-2xl shadow-white/10 touch-manipulation"
             >
               Order Now - $599
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-5 bg-white/5 text-white text-base font-semibold rounded-full border border-white/20 hover:bg-white/10 transition-all backdrop-blur-xl"
+              className="px-8 sm:px-10 py-4 sm:py-5 bg-white/5 text-white text-sm sm:text-base font-semibold rounded-full border border-white/20 hover:bg-white/10 transition-all backdrop-blur-xl touch-manipulation"
             >
               Try in Store
             </motion.button>
@@ -44,7 +44,7 @@ export default function CTASection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-white/40"
+            className="mt-12 sm:mt-16 flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-white/40 px-4"
           >
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

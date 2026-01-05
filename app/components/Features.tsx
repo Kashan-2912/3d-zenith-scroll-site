@@ -41,13 +41,13 @@ function FeatureCard({ feature, index }: { feature: typeof features[0]; index: n
     <motion.div
       ref={ref}
       style={{ opacity, y, scale }}
-      className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 lg:p-12 border border-white/10 hover:border-white/20 transition-colors"
+      className="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 border border-white/10 hover:border-white/20 transition-colors touch-manipulation"
     >
-      <div className="text-6xl mb-6">{feature.icon}</div>
-      <h3 className="text-3xl lg:text-4xl font-bold tracking-tight text-white/90 mb-4">
+      <div className="text-5xl sm:text-6xl mb-4 sm:mb-6">{feature.icon}</div>
+      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white/90 mb-3 sm:mb-4">
         {feature.title}
       </h3>
-      <p className="text-lg text-white/60 leading-relaxed">
+      <p className="text-base sm:text-lg text-white/60 leading-relaxed">
         {feature.description}
       </p>
     </motion.div>
@@ -56,28 +56,28 @@ function FeatureCard({ feature, index }: { feature: typeof features[0]; index: n
 
 export default function Features() {
   return (
-    <section id="features" className="relative bg-[#050505] py-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="features" className="relative bg-[#050505] py-20 sm:py-24 md:py-32 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 md:mb-20"
         >
-          <h2 className="text-5xl lg:text-7xl font-bold tracking-tighter text-white/90 mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white/90 mb-4 sm:mb-6">
             Engineered for
             <br />
             <span className="text-white">Perfection</span>
           </h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto px-4">
             Every detail refined. Every feature purposeful.
           </p>
         </motion.div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}

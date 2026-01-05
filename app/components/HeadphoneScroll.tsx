@@ -160,12 +160,12 @@ export default function HeadphoneScroll() {
             {/* Hero Title - 0-15% */}
             <motion.div
               style={{ opacity: titleOpacity }}
-              className="absolute text-center px-4"
+              className="absolute text-center px-4 w-full"
             >
-              <h1 className="text-7xl md:text-9xl font-bold tracking-tighter text-white/90 mb-4">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold tracking-tighter text-white/90 mb-3 md:mb-4">
                 Zenith X
               </h1>
-              <p className="text-xl md:text-2xl tracking-widest text-white/60">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl tracking-widest text-white/60">
                 PURE SOUND
               </p>
             </motion.div>
@@ -173,15 +173,15 @@ export default function HeadphoneScroll() {
             {/* Precision Engineering - 25-35% */}
             <motion.div
               style={{ opacity: precisionOpacity }}
-              className="absolute left-8 md:left-20 max-w-md"
+              className="absolute left-4 sm:left-6 md:left-8 lg:left-20 max-w-xs sm:max-w-sm md:max-w-md pr-4"
             >
-              <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-white/90 mb-2">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white/90 mb-1 sm:mb-2">
                 Precision
               </h2>
-              <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-white/90 mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white/90 mb-2 sm:mb-3 md:mb-4">
                 Engineering
               </h2>
-              <p className="text-sm md:text-base tracking-wide text-white/60">
+              <p className="text-xs sm:text-sm md:text-base tracking-wide text-white/60 leading-relaxed">
                 Every component meticulously crafted for acoustic perfection
               </p>
             </motion.div>
@@ -189,15 +189,15 @@ export default function HeadphoneScroll() {
             {/* Titanium Drivers - 50-60% */}
             <motion.div
               style={{ opacity: titaniumOpacity }}
-              className="absolute right-8 md:right-20 max-w-md text-right"
+              className="absolute right-4 sm:right-6 md:right-8 lg:right-20 max-w-xs sm:max-w-sm md:max-w-md text-right pl-4"
             >
-              <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-white/90 mb-2">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white/90 mb-1 sm:mb-2">
                 Titanium
               </h2>
-              <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-white/90 mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white/90 mb-2 sm:mb-3 md:mb-4">
                 Drivers
               </h2>
-              <p className="text-sm md:text-base tracking-wide text-white/60">
+              <p className="text-xs sm:text-sm md:text-base tracking-wide text-white/60 leading-relaxed">
                 40mm high-fidelity drivers with crystalline clarity
               </p>
             </motion.div>
@@ -205,12 +205,12 @@ export default function HeadphoneScroll() {
             {/* CTA - 80-90% */}
             <motion.div
               style={{ opacity: ctaOpacity }}
-              className="absolute text-center px-4"
+              className="absolute text-center px-4 w-full"
             >
-              <h2 className="text-6xl md:text-8xl font-bold tracking-tighter text-white/90 mb-6">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tighter text-white/90 mb-4 sm:mb-6">
                 Hear Everything
               </h2>
-              <button className="pointer-events-auto px-8 py-4 bg-white text-[#050505] text-sm tracking-widest font-semibold hover:bg-white/90 transition-colors rounded-full">
+              <button className="pointer-events-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#050505] text-xs sm:text-sm tracking-widest font-semibold hover:bg-white/90 active:scale-95 transition-all rounded-full touch-manipulation">
                 EXPLORE ZENITH X
               </button>
             </motion.div>
