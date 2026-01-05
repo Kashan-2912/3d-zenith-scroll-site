@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import HeadphoneScroll from './components/HeadphoneScroll';
-import CTASection from './components/CTASection';
+// import CTASection from './components/CTASection';
 import Features from './components/Features';
 import TechSpecs from './components/TechSpecs';
 import VideoSection from './components/VideoSection';
