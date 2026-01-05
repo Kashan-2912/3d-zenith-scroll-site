@@ -11,7 +11,7 @@ export default function Home() {
     <main className="bg-[#050505] min-h-screen overflow-x-hidden">
       <Navbar />
       <HeadphoneScroll />
-      <CTASection />
+      {/* <CTASection /> */}
       <Features />
       <VideoSection />
       <TechSpecs />
